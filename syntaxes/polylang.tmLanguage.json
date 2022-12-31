@@ -1,0 +1,75 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Polylang",
+	"patterns": [
+		{"include": "#control"},
+		{"include": "#declaration"},
+		{"include": "#operator"}
+	],
+	"repository": {
+		"control": {
+			"patterns": [
+				{"include": "#control-flow"}
+			]
+		},
+		"control-flow": {
+			"match": "\\b(if|else|let|for|while|break|continue|throw|return)\\b",
+			"name": "keyword.control.flow.polylang"
+		},
+		"declaration": {
+			"patterns": [
+				{"include": "#declaration-collection"},
+				{"include": "#declaration-storage"},
+				{"include": "#declaration-function"}
+			]
+		},
+		"declaration-collection": {
+			"match": "\\b(collection)(?:\\s+([A-Za-z]\\w+))\\b",
+			"captures": {
+				"1": {"name": "keyword.other.collection.polylang"},
+				"2": {"name": "entity.name.type.collection.polylang"}
+			}
+		},
+		"declaration-storage": {
+			"patterns": [
+				{"include": "#type-primitive"}
+			]
+		},
+		"declaration-function": {
+			"match": "\\b(function)\\s+(\\w+)\\b",
+			"captures": {
+				"1": {"name": "storage.type.function.polylang"},
+				"2": {"name": "entity.name.function.polylang"}
+			}
+		},
+		"operator": {
+			"patterns": [
+				{"include": "#operator-binary"},
+				{"include": "#operator-logic"},
+				{"include": "#operator-assignment"},
+				{"include": "#operator-arithmetic"}
+			]
+		},
+        "operator-logic": {
+            "match": "(\\!=|\\!|<|>|<=|>=|==|\\&\\&|\\|\\|)",
+            "name": "keyword.operator.logic.polylang"
+        },
+		"operator-arithmetic": {
+            "match": "(\\*|\\/|\\%|\\+|\\-)",
+            "name": "keyword.operator.arithmetic.polylang"
+		},
+        "operator-assignment": {
+            "match": "(\\=|\\-\\=|\\+\\=)",
+            "name": "keyword.operator.assignment.polylang"
+        },
+        "operator-binary": {
+            "match": "(~|\\*\\*|\\<\\<|\\>\\>|\\&|\\^|\\|)",
+            "name": "keyword.operator.binary.polylang"
+        },
+		"type-primitive": {
+			"match": "\\b(string|number)\\b",
+			"name": "support.type.primitive.polylang"
+		}
+	},
+	"scopeName": "source.polylang"
+}
