@@ -1,9 +1,7 @@
 # Change Log
 
-All notable changes to the "vscode-polylang" extension will be documented in this file.
+## [0.0.1] - 2022-12-31
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+### Added
 
-## [Unreleased]
-
-- Initial release
+- Added basic syntax grammar
