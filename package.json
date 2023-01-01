@@ -2,9 +2,12 @@
   "name": "polylang",
   "displayName": "Polylang",
   "description": "Rich Polylang language support for Visual Studio Code",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "durudex",
-  "repository": "https://github.com/durudex/vscode-polylang",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/durudex/vscode-polylang"
+  },
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -22,6 +25,10 @@
       "language": "polylang",
       "scopeName": "source.polylang",
       "path": "./syntaxes/polylang.tmLanguage.json"
+    }],
+    "snippets": [{
+      "language": "polylang",
+      "path": "./snippets/polylang.json"
     }]
   }
 }
