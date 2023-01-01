@@ -67,7 +67,7 @@
             "name": "keyword.operator.binary.polylang"
         },
 		"type-primitive": {
-			"match": "\\b(string|number)\\b",
+			"match": "\\b(string|number|record)\\b",
 			"name": "support.type.primitive.polylang"
 		}
 	},
