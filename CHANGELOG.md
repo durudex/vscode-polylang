@@ -1,5 +1,11 @@
 # Change Log
 
+## [Unreleased]
+
+### Added
+
+- Added extension logo.
+
 ## [0.0.2] - 2023-01-01
 
 ### Added

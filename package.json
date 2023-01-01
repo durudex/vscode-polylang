@@ -8,11 +8,18 @@
     "type": "git",
     "url": "https://github.com/durudex/vscode-polylang"
   },
+  "bugs": {
+    "url": "https://github.com/durudex/vscode-polylang/issues"
+  },
+  "private": true,
+  "license": "MIT",
+  "icon": "assets/logo.png",
   "engines": {
     "vscode": "^1.74.0"
   },
   "categories": [
-    "Programming Languages"
+    "Programming Languages",
+    "Snippets"
   ],
   "contributes": {
     "languages": [{
