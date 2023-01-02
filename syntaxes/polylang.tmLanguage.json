@@ -21,7 +21,8 @@
 				{"include": "#declaration-collection"},
 				{"include": "#declaration-storage"},
 				{"include": "#declaration-function"},
-				{"include": "#declaration-error"}
+				{"include": "#declaration-error"},
+				{"include": "#declaration-call"}
 			]
 		},
 		"declaration-collection": {
@@ -47,6 +48,10 @@
 		"declaration-error": {
 			"match": "\\b(error)(\\s+([A-Za-z_]\\w*))?\\b",
 			"name": "storage.type.error.polylang"
+		},
+		"declaration-call": {
+			"match": "\\b([A-Za-z_]\\w*)\\s*(\\()",
+			"name": "entity.name.function.call.polylang"
 		},
 		"operator": {
 			"patterns": [
