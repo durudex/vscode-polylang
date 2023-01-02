@@ -2,11 +2,37 @@
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "Polylang",
 	"patterns": [
+		{"include": "#comment"},
 		{"include": "#control"},
 		{"include": "#declaration"},
 		{"include": "#operator"}
 	],
 	"repository": {
+		"comment": {
+			"patterns": [
+				{"include": "#comment-block"},
+				{"include": "#comment-line"}
+			]
+		},
+		"comment-block": {
+			"name": "comment.block.documentation.polylang",
+			"begin": "(\\/\\*)",
+			"beginCaptures": {
+				"1": {"name": "punctuation.definition.comment.polylang"}
+			},
+			"end": "(\\*\\/)",
+			"endCaptures": {
+				"1": {"name": "punctuation.definition.comment.polylang"}
+			}
+		},
+		"comment-line": {
+			"name": "comment.line.double-slash.polylang",
+			"begin": "(\\/\\/)",
+			"beginCaptures": {
+				"1": {"name": "punctuation.definition.comment.polylang"}
+			},
+			"end": "(?:\\n|$)"
+		},
 		"control": {
 			"patterns": [
 				{"include": "#control-flow"}
