@@ -1,6 +1,13 @@
-# VSCode Polylang
+<h1 align="center">VSCode Polylang</h1>
 
-Rich Polylang language support for Visual Studio Code
+<p align="center">
+    Rich Polylang language support for Visual Studio Code
+</p>
+
+- Syntax highlighting
+- Snippets
+
+![demo](assets/demo.jpeg)
 
 ## ⚠️ License
 
