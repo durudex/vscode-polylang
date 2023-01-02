@@ -5,6 +5,7 @@
 ### Added
 
 - Added extension logo.
+- Added support for string and number primitives.
 
 ## [0.0.2] - 2023-01-01
 

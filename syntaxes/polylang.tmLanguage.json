@@ -32,6 +32,7 @@
 		},
 		"declaration-storage": {
 			"patterns": [
+				{"include": "#primitive"},
 				{"include": "#type-primitive"}
 			]
 		},
@@ -66,6 +67,28 @@
             "match": "(~|\\*\\*|\\<\\<|\\>\\>|\\&|\\^|\\|)",
             "name": "keyword.operator.binary.polylang"
         },
+		"primitive": {
+			"patterns": [
+				{"include": "#number"},
+				{"include": "#string"}
+			]
+		},
+		"number": {
+			"match": "\\b([0-9_]+(\\.[0-9_]+)?)\\b",
+			"name": "constant.numeric.polylang"
+		},
+		"string": {
+			"patterns": [
+				{
+					"match": "\\\".*?\\\"",
+					"name": "string.quoted.double.polylang"
+				},
+				{
+					"match": "\\'.*?\\'",
+					"name": "string.quoted.single.polylang"
+				}
+			]
+		},
 		"type-primitive": {
 			"match": "\\b(string|number|record)\\b",
 			"name": "support.type.primitive.polylang"
