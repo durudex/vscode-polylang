@@ -8,6 +8,7 @@
 - Added support for string and number primitive grammar.
 - Added support for error declaration grammar.
 - Added support for declaration function call grammar.
+- Added support for comment grammar.
 
 ## [0.0.2] - 2023-01-01
 
