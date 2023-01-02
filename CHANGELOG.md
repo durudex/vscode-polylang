@@ -5,7 +5,8 @@
 ### Added
 
 - Added extension logo.
-- Added support for string and number primitives.
+- Added support for string and number primitive grammar.
+- Added support for error declaration grammar.
 
 ## [0.0.2] - 2023-01-01
 
