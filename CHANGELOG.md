@@ -1,5 +1,11 @@
 # Change Log
 
+## [Unreleased]
+
+### Added
+
+- Added return type for function snippet.
+
 ## [0.0.3] - 2023-01-02
 
 ### Added

@@ -14,7 +14,7 @@
         },
         "function": {
             "prefix": "fc",
-            "body": "function ${1:name}($2) {\n\t$0\n}"
+            "body": "function ${1:name}($2)$3 {\n\t$0\n}"
         },
         "if-statement": {
             "prefix": "if",
