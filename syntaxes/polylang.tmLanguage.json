@@ -5,7 +5,10 @@
 		{"include": "#comment"},
 		{"include": "#control"},
 		{"include": "#declaration"},
-		{"include": "#operator"}
+		{"include": "#operator"},
+		{"include": "#primitive"},
+		{"include": "#type-primitive"},
+		{"include": "#constant"}
 	],
 	"repository": {
 		"comment": {
@@ -45,7 +48,6 @@
 		"declaration": {
 			"patterns": [
 				{"include": "#declaration-collection"},
-				{"include": "#declaration-storage"},
 				{"include": "#declaration-function"},
 				{"include": "#declaration-error"},
 				{"include": "#declaration-call"},
@@ -58,12 +60,6 @@
 				"1": {"name": "keyword.other.collection.polylang"},
 				"2": {"name": "entity.name.type.collection.polylang"}
 			}
-		},
-		"declaration-storage": {
-			"patterns": [
-				{"include": "#primitive"},
-				{"include": "#type-primitive"}
-			]
 		},
 		"declaration-function": {
 			"match": "\\b(function)\\s+(\\w+)\\b",
@@ -133,6 +129,15 @@
 		"type-primitive": {
 			"match": "\\b(string|number|record)\\b",
 			"name": "support.type.primitive.polylang"
+		},
+		"constant": {
+			"patterns": [
+				{"include": "#constant-order"}
+			]
+		},
+		"constant-order": {
+			"match": "\\b(asc|desc)\\b",
+			"name": "constant.language.order.polylang"
 		}
 	},
 	"scopeName": "source.polylang"
