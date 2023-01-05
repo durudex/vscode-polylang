@@ -9,6 +9,10 @@
 - Added support for boolean type grammar.
 - Added support for map type grammar.
 
+### Removed
+
+- Removed unique index grammar.
+
 ## [0.0.3] - 2023-01-02
 
 ### Added
