@@ -6,7 +6,8 @@
 
 - Added return type for function snippet.
 - Added support for order grammar.
-- Added support for boolean type.
+- Added support for boolean type grammar.
+- Added support for map type grammar.
 
 ## [0.0.3] - 2023-01-02
 
