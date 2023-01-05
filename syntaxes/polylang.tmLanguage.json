@@ -77,7 +77,7 @@
 			"name": "entity.name.function.call.polylang"
 		},
 		"declaration-index": {
-			"match": "(@index|@unique)\\b",
+			"match": "@index\\b",
 			"name": "keyword.control.index.polylang"
 		},
 		"operator": {
