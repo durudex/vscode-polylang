@@ -7,7 +7,7 @@
 		{"include": "#declaration"},
 		{"include": "#operator"},
 		{"include": "#primitive"},
-		{"include": "#type-primitive"},
+		{"include": "#type"},
 		{"include": "#constant"}
 	],
 	"repository": {
@@ -126,18 +126,23 @@
 				}
 			]
 		},
-		"type-primitive": {
-			"match": "\\b(string|number|record)\\b",
+		"type": {
+			"match": "\\b(string|number|boolean|record)\\b",
 			"name": "support.type.primitive.polylang"
 		},
 		"constant": {
 			"patterns": [
-				{"include": "#constant-order"}
+				{"include": "#constant-order"},
+				{"include": "#constant-boolean"}
 			]
 		},
 		"constant-order": {
 			"match": "\\b(asc|desc)\\b",
 			"name": "constant.language.order.polylang"
+		},
+		"constant-boolean": {
+			"match": "\\b(true|false)\\b",
+			"name": "constant.language.boolean.polylang"
 		}
 	},
 	"scopeName": "source.polylang"

@@ -6,6 +6,7 @@
 
 - Added return type for function snippet.
 - Added support for order grammar.
+- Added support for boolean type.
 
 ## [0.0.3] - 2023-01-02
 
