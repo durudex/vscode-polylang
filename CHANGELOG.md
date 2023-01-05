@@ -8,6 +8,8 @@
 - Added support for order grammar.
 - Added support for boolean type grammar.
 - Added support for map type grammar.
+- Added constructor snippet.
+- Added id field for collection snippet.
 
 ### Removed
 
