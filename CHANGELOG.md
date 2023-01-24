@@ -1,5 +1,11 @@
 # Change Log
 
+## [Unreleased]
+
+### Added
+
+- Added support for bytes type.
+
 ## [0.0.4] - 2023-01-05
 
 ### Added

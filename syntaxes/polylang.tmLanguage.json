@@ -127,7 +127,7 @@
 			]
 		},
 		"type": {
-			"match": "\\b(string|number|boolean|record|map)\\b",
+			"match": "\\b(string|number|boolean|bytes|record|map)\\b",
 			"name": "support.type.primitive.polylang"
 		},
 		"constant": {
