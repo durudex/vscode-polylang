@@ -4,7 +4,8 @@
 
 ### Added
 
-- Added support for bytes type.
+- Added support for bytes type grammar.
+- Added support for PublicKey type grammar.
 
 ## [0.0.4] - 2023-01-05
 
