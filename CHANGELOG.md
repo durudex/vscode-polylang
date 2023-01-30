@@ -6,6 +6,7 @@
 
 - Added support for bytes type grammar.
 - Added support for PublicKey type grammar.
+- Added support for decorator grammar.
 
 ## [0.0.4] - 2023-01-05
 

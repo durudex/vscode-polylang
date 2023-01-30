@@ -51,7 +51,8 @@
 				{"include": "#declaration-function"},
 				{"include": "#declaration-error"},
 				{"include": "#declaration-call"},
-				{"include": "#declaration-index"}
+				{"include": "#declaration-index"},
+				{"include": "#declaration-decorator"}
 			]
 		},
 		"declaration-collection": {
@@ -79,6 +80,10 @@
 		"declaration-index": {
 			"match": "@index\\b",
 			"name": "keyword.control.index.polylang"
+		},
+		"declaration-decorator": {
+			"match": "(@public|@read|@call|@delegate)\\b",
+			"name": "entity.name.function.polylang"
 		},
 		"operator": {
 			"patterns": [
