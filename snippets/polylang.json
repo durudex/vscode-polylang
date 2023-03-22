@@ -2,7 +2,7 @@
     "polylang-snippets": {
         "collection": {
             "prefix": "cl",
-            "body": "collection ${1:Name} {\n\tid: ${2:type};\n\t$0\n}"
+            "body": "${1:@public}\ncollection ${2:Name} {\n\tid: ${3:type};\n\t$0\n}"
         },
         "field": {
             "prefix": "fl",
@@ -18,7 +18,7 @@
         },
         "constructor": {
             "prefix": "cn",
-            "body": "function constructor(id: ${1:type}$2) {\n\tthis.id = id;\n\t$0\n}"
+            "body": "constructor(id: ${1:type}$2) {\n\tthis.id = id;\n\t$0\n}"
         },
         "if-statement": {
             "prefix": "if",
