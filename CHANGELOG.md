@@ -1,23 +1,27 @@
 # Change Log
 
-## [Unreleased]
+## [0.0.5] - 2023-03-22
 
 ### Added
 
-- Added support for bytes type grammar.
-- Added support for PublicKey type grammar.
-- Added support for decorator grammar.
+- Added bytes, PublicKey type grammar.
+- Added `@public`, `@read`, `@call`, `@delegate` decorator grammar.
+
+### Updated
+
+- A `@public` directive has been added to collection snippets.
 
 ## [0.0.4] - 2023-01-05
 
 ### Added
 
-- Added return type for function snippet.
-- Added support for order grammar.
-- Added support for boolean type grammar.
-- Added support for map type grammar.
+- Added order, boolean, map type grammars.
 - Added constructor snippet.
-- Added id field for collection snippet.
+
+### Updated
+
+- A return type has been added to function snippets.
+- A id field has been added to collection snippets.
 
 ### Removed
 
@@ -28,17 +32,14 @@
 ### Added
 
 - Added extension logo.
-- Added support for string and number primitive grammar.
-- Added support for error declaration grammar.
-- Added support for declaration function call grammar.
-- Added support for comment grammar.
-- Added support for index declaration grammar.
+- Added string and number primitive grammar.
+- Added index, comment, call function, error declaration grammars.
 
 ## [0.0.2] - 2023-01-01
 
 ### Added
 
-- Added support for the record type grammar.
+- Added record type grammar.
 - Added basic polylang snippers.
 
 ## [0.0.1] - 2022-12-31
